@@ -24,7 +24,7 @@ function showPosition(position){
   latitude =  position.coords.latitude
   longitude =  position.coords.longitude
   
-  fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=12b19b3fba214c198e5d94b32ec00003`)
+  fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=12b19b3fba214c198e5d94b32ec00003`)
   .then(pos=>pos.json())
   .then(posData=>{
     console.log(posData?.name)
@@ -46,7 +46,7 @@ function showPosition(position){
 
 
 button.addEventListener('click', function(){
-  fetch(`http://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=df4eaa799dc0c37d3b3c8a65d64be622`)
+  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=df4eaa799dc0c37d3b3c8a65d64be622`)
   .then(ertek => ertek.json())
   .then(data => {console.log(data)
     let cityName = data.name
