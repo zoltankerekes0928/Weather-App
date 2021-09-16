@@ -10,7 +10,7 @@ height: 100vh;
 display: flex;
 justify-content: center;
 align-items: center;
-background: url(/src/weather-wallpaper-4.jpg);
+background: url(./src/weather-wallpaper-4.jpg);
 background-position: center;
 background-size: cover;
 background-repeat: no-repeat;
