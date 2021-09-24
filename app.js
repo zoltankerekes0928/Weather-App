@@ -32,7 +32,7 @@ function showPosition(position){
     let temp = posData?.main?.temp
     let descValue = posData['weather']['0']['description']
     let iconsvg = posData['weather']['0']['icon']
-    let iconSRC = `<img src='http://openweathermap.org/img/wn/${iconsvg}@2x.png'>`
+    let iconSRC = `<img src='https://openweathermap.org/img/wn/${iconsvg}@2x.png'>`
 
     city.innerHTML= cityName
     degree.innerHTML=Math.round(temp-272.15)
@@ -53,7 +53,7 @@ button.addEventListener('click', function(){
     let temp = data['main']['temp']
     let descValue = data['weather']['0']['description']
     let iconsvg = data['weather']['0']['icon']
-    let iconSRC = `<img src='http://openweathermap.org/img/wn/${iconsvg}@2x.png'>`
+    let iconSRC = `<img src='https://openweathermap.org/img/wn/${iconsvg}@2x.png'>`
 
     city.innerHTML= cityName
     degree.innerHTML=Math.round(temp-272.15)
